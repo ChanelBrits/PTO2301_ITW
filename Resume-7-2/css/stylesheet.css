@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-image {
+    background-image: url(../images/desktop.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100%;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 200px
+}
+h1 {
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 55pt;
+    width: 300px;
+}
+.hero-profile img{
+    position: absolute;
+    right: 147px;
+    top: 100px;
+    width: 533px;
+    height: 611px;
+}
+.hero-btn {
+    position: absolute;
+    width: 175px;
+    top: 465px;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16pt;
+    border-style: none;
+    background-color: #b14aed;
+    color: white;
+}
+/* nav at top menu */
+.menu {
+    display: flex;
+    position: absolute;
+    gap: 50px;
+    top: 25px;
+    right: 150px;
+    z-index: 10;
+}
+.menu a{
+    color: #b14aed;
+    font-weight: bold;
+    padding: 7px;
+}
+.menu a:hover {
+    color: white;
+    background-color: #097985;
+    border-radius: 5px;
+    padding: 7px;
+}
+.soc-menu {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.soc-menu img{
+    width: 32px;
+    height: 32px;
+}
+.skills {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+.skills img{
+    width: 162px;
+    height: 162px;
+}
+.skills p {
+    width: 250px;
+    height: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.pro-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+.pro-container img {
+    width: 402px;
+    height: 268px;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 402px;
+    height: 268px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.pro-container:hover .overlay {
+    opacity: 1;
+}

@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../images/linkedin-blue.png) url(../images/github-blue.png) url(../images/instagram-blue.png);
+
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 40px);
+    margin-top: 40px;
+    background-image: url(../images/1920.png);
+    background-color: #097985;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* header */
+.header-main {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 40px;
+    background-color: #b14aed;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+/* nav links */
+.header-menu {
+    order: 2;
+    width: 400px;
+    height: 100%;
+}
+.header-menu a {
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.header-menu a:hover {
+    color: white;
+    background-color: #097985;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* social links */
+.header-soc-menu {
+    order: 1;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-soc-linkedin {
+    width: 29px;
+    height: 29px;
+    background-image: url(../images/linkedin-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-soc-linkedin:hover {
+    background-image: url(../images/linkedin-blue.png);
+}
+.header-soc-insta {
+    width: 29px;
+    height: 29px;
+    background-image: url(../images/instagram-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-soc-insta:hover {
+    background-image: url(../images/instagram-blue.png);
+}
+.header-soc-git {
+    width: 29px;
+    height: 29px;
+    background-image: url(../images/github-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-soc-git:hover {
+    background-image: url(../images/github-blue.png);
+}
+/* hero text */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    top: 80px;
+    left: 20%;
+}
+.hero-text h1 {
+    font-weight: 600;
+    font-size: 4.5vw;
+    line-height: 60px;
+}
+.hero-text h2 {
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 1.5vw;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    font-size: 1vw;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.hero-btn {
+    position: absolute;
+    top: 100%;
+    width: 30%;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.5vw;
+    border-style: none;
+    background-color: #b14aed;
+    color: white;
+}
+.hero-profile-main{
+    width: 40%;
+}
+
+.hero-profile img{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 60%;
+    top: 20%;
+
+}
+
+/* media queries */
+@media only screen and (max-width: 900px) {
+    body{
+        background-image: url(../images/900.png);
+        background-color: #097985;
+        height: 100vh;
+        max-width: 100%;
+        min-height: auto;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        background-position: center, center;
+        }
+}
+@media only screen and (max-width: 864px) {
+    body{
+        background-image: url(../images/864.png);
+        background-color: #097985;
+        width: 100%;
+        height: 100vh;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        background-position: center, center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: url(../images/768.png);
+        background-color: #097985;
+        width: 100%;
+        height: 100vh;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        background-position: center, center;
+    }
+}
+@media only screen and (max-width: 720px) {
+    body{
+        background-image: url(../images/720.png);
+        background-color: #097985;
+        width: 100%;
+        height: 100vh;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        background-position: center, center;
+    }
+}

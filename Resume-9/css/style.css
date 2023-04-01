@@ -19,16 +19,20 @@ body:after {
 
 }
 
-main {
+body {
     width: 100%;
     height: calc(100vh - 40px);
     margin-top: 40px;
-    background-image: url(../images/1920.png);
-    background-color: #097985;
+    background-image: url(../images/2560.png);
     background-size: contain, cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 200px;
 }
 /* header */
 .header-main {
@@ -100,6 +104,11 @@ main {
 .header-soc-git:hover {
     background-image: url(../images/github-blue.png);
 }
+.hero-content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
 /* hero text */
 .hero-text {
     display: flex;
@@ -128,37 +137,160 @@ main {
     margin-bottom: 10px;
     padding: 10px;
 }
+/* Contact Me button */
 .hero-btn {
     position: absolute;
-    top: 100%;
+    top: 75%;
     width: 30%;
     padding: 15px;
     border-radius: 30px;
     font-weight: 500;
     font-size: 1.5vw;
     border-style: none;
+    border-width: 2pt;
     background-color: #b14aed;
     color: white;
 }
-.hero-profile-main{
-    width: 40%;
+.hero-btn:hover {
+    width: 30%;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #097985;
+    border-style: solid;
+    border-width: 2pt;
+    border-color: #1f1a38;
 }
 
 .hero-profile img{
-    width: 20vw;
+    width: 22vw;
     height: 100%;
-    display: flex;
     position: relative;
-    left: 60%;
-    top: 20%;
+    left: 80%;
+    top: 14%;
 
 }
+/* projects section */
+.projects-main {
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+}
+#pro-link{
+    position: relative;
+    left: 15%;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #cfcfea;
+    width: 70%;
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: center;
+}
+.projects-images {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+.pro-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+}
+.pro-container img {
+    width: 336px;
+    height: 224px;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 336px;
+    height: 224px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 1vw;
+    padding: 50px;
+    text-align: center;
+}
+.pro-container:hover .overlay {
+    opacity: 1;
+}
 
+/* Education Section */
+.education-main {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap: 10px;
+}
+#edu-link {
+    position: relative;
+    left: 15%;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #cfcfea;
+    width: 70%;
+    height: fit-content;
+    font-size: 2vw;
+    font-weight: 100;
+    text-align: center;
+}
+.edu-content {
+    padding: 50px;
+}
+.edu-1{
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 12rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #1f1a38;
+    margin-bottom: 2rem
+}
+#uni {
+    font-weight: 600;
+}
+.edu-2 {
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 12rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #1f1a38;
+}
+.certifications {
+
+}
 /* media queries */
+@media only screen and (max-width: 1920px) {
+    body{
+        background-image: url(../images/1920.png);
+
+        height: 100vh;
+        max-width: 100%;
+        min-height: auto;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        background-position: center, center;
+        }
+}
 @media only screen and (max-width: 900px) {
     body{
         background-image: url(../images/900.png);
-        background-color: #097985;
+
         height: 100vh;
         max-width: 100%;
         min-height: auto;
@@ -170,7 +302,6 @@ main {
 @media only screen and (max-width: 864px) {
     body{
         background-image: url(../images/864.png);
-        background-color: #097985;
         width: 100%;
         height: 100vh;
         background-size: contain, cover;
@@ -182,7 +313,6 @@ main {
 @media only screen and (max-width: 768px) {
     body{
         background-image: url(../images/768.png);
-        background-color: #097985;
         width: 100%;
         height: 100vh;
         background-size: contain, cover;
@@ -193,7 +323,6 @@ main {
 @media only screen and (max-width: 720px) {
     body{
         background-image: url(../images/720.png);
-        background-color: #097985;
         width: 100%;
         height: 100vh;
         background-size: contain, cover;

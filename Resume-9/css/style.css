@@ -54,6 +54,7 @@ main {
     order: 2;
     width: 400px;
     height: 100%;
+    padding-top: 5px;
 }
 .header-menu a {
     color: white;
@@ -190,11 +191,15 @@ main {
 }
 .projects-images {
     display: flex;
-    flex-shrink: 0;
     flex-direction: row;
+    flex-wrap: wrap;
+    flex: 50%;
+    position: relative;
+    left: 20%;
 }
 .pro-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     position: relative;
     width: 50%;
@@ -262,6 +267,7 @@ main {
 }
 .edu-2 {
     flex: 1 1 auto;
+    line-height: 2rem;
     padding: 2rem 2rem;
     position: relative;
     left: 15%;
@@ -271,9 +277,97 @@ main {
     border-style: solid;
     border-color: #1f1a38;
 }
-.certifications {
-
+/* Skills Section */
+.skills-main {
+    
+    gap: 20px;
 }
+#skills {
+    position: relative;
+    left: 15%;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #cfcfea;
+    width: 70%;
+    height: fit-content;
+    font-size: 2vw;
+    font-weight: 100;
+    text-align: center;
+}
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    position: relative;
+    left: 15%;
+}
+.container {
+    width: 400px;
+    text-align: left;
+  }
+  .progress {
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.25);  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  .progress-bar {
+    height: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  }
+  .progress-moved .progress-bar {
+    width: 90%; 
+    background-color: #097985; 
+  }
+  .progress-moved2 .progress-bar2 {
+    width: 80%; 
+    background-color: #097985; 
+  }
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  }
+  .progress-moved3 .progress-bar3 {
+    width: 70%; 
+    background-color: #097985; 
+  }
+  .progress-bar3 {
+    height: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  }
+  .progress-moved4 .progress-bar4 {
+    width: 80%; 
+    background-color: #b14aed; 
+  }
+  .progress-bar4 {
+    height: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  }
+  .progress-moved5 .progress-bar5 {
+    width: 95%; 
+    background-color: #b14aed; 
+  }
+  .progress-bar5 {
+    height: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  }
+  .progress-moved6 .progress-bar6 {
+    width: 70%; 
+    background-color: #b14aed; 
+  }
+  .progress-bar6 {
+    height: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  }
+
+
 /* media queries */
 @media only screen and (max-width: 1920px) {
     body{

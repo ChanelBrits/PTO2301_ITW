@@ -32,7 +32,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 200px;
+    gap: 50px;
 }
 hr {
     color: #adb5bd;
@@ -181,7 +181,7 @@ hr {
 }
 /* projects section */
 .projects-main {
-    top: 80%;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -199,28 +199,29 @@ hr {
     text-align: center;
 }
 .projects-images {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 50%;
     position: relative;
-    left: 20%;
 }
 .pro-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    width: 50%;
-    max-width: 500px;
+    left: 25%;
 }
 .pro-container img {
     width: 336px;
     height: 224px;
+    margin: 1rem;
 }
 .overlay {
     position: absolute; 
     bottom: 0; 
+    margin: 1rem;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1; 
@@ -285,7 +286,6 @@ hr {
 }
 /* Skills Section */
 .skills-main {
-    
     gap: 20px;
 }
 #skills {
@@ -301,6 +301,7 @@ hr {
     text-align: center;
 }
 .skills-content {
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -409,6 +410,53 @@ hr {
     border-radius: 10px;
     border-color: #1f1a38;
     margin-bottom: 2rem
+}
+/* contact section */
+.contact-main {
+    display: flex;
+    flex-direction: row;
+}
+#con-link {
+    position: relative;
+    left: 15%;
+    border-radius: 10px;
+    background-color: #cfcfea;
+    width: 70%;
+    height: fit-content;
+    font-size: 2vw;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #cfcfea;
+	border-radius: 4px;
+}
+.contact-info{
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    z-index: 5;
+}
+form {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+
+}
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* media queries */

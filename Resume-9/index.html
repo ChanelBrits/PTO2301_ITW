@@ -35,7 +35,7 @@
                         <p>Highly skilled software developer with 5 years of experience in building complex applications. Proficient in Java, Python, and JavaScript. 
                             Passionate about solving complex problems and staying up-to-date with the latest technologies.
                         </p>
-                        <button class="hero-btn">Contact Me</button>
+                        <button class="hero-btn"><a href="#con-link" style="text-decoration: none;">Contact Me</a></button>
                     </div>
 
                     <div class="hero-profile-main">
@@ -48,6 +48,7 @@
 
             <section class="projects-main">
                 <h3 id="pro-link">Latest Projects</h3>
+                
                 <div class="projects-images">
                     <div class="pro-container">
                         <img src="images/website-purp.jpg" alt="Web Design">
@@ -62,6 +63,9 @@
                             Developed a mobile application for a client's business. The app will have a user-friendly interface that is optimized for both Android and iOS devices, with a focus on creating an engaging user experience.
                         </div>
                     </div>
+                </div>
+                
+                <div class="projects-images">
                     <div class="pro-container">
                         <img src="images/website-yell.jpg" alt="Web Design">
                         <div class="overlay">
@@ -75,6 +79,7 @@
                         </div>
                     </div>
                 </div>
+                
             </section>
             <hr>
             <section class="education-main">
@@ -183,10 +188,29 @@
                     </div>
                 </div>
             </section>
-            
-            
-            
-            <h3 id="con-link">Contact</h3>
+            <hr>
+            <footer class="contact-main">
+                <div class="contact-form">
+                    <h3 id="con-link">Contact</h3>
+                    <form action="https://formsubmit.co/nell9737@gmail.com" method="post">
+                        <label for="first_name">First Name</label>
+		                <input name="first_name" type="text" required placeholder="Jane"/>
+                        <label for="first_name">Last Name</label>
+                        <input name="last_name" type="text" required placeholder="Doe"/>
+                        <label for="email">Email</label>
+                        <input name="email" type="email" required placeholder="janedoe@domain.com"/>
+                        <label for="message">Message</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h4>Phone Number:</h4>
+                    <p>012-345-6789</p>
+                    <h4>Email:</h4>
+                    <p>john.smith@email.com</p>
+                </div>
+            </footer>
         </main>
     </body>
 </html>
